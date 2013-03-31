@@ -1,0 +1,1 @@
+n.times{puts 'Ruby!'}
