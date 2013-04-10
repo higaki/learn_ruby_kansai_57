@@ -5,7 +5,7 @@ class Integer
     case
     when self <= 0 then raise ArgumentError
     when self <= 2 then self
-    else [*2..self].to_a.inject(&:*)
+    else [*2..self].inject(&:*)
     end
   end
 end
