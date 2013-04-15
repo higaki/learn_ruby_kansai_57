@@ -1,7 +1,7 @@
 def ex
   yield
-rescue KeyError, StopIteration => ex
-  # ひとつの rescue に複数の例外クラスを指定
+rescue IndexError => ex
+  # 親クラスで、ひとまとめに rescue
   ex.class
 end
 
